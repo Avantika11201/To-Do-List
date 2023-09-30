@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>To-Do List</title>
+<style>
+    ul li.checked {
+        text-decoration: line-through;
+    }
+</style>
+</head>
+<body>
+    <ul id="list-container">
+        <!-- Example task items -->
+        <!-- <li>Task 1</li>
+        <li class="checked">Task 2 (Completed)</li>
+        <li>Task 3</li> -->
+    </ul>
+
+    <script>
+        // JavaScript for toggling the 'checked' class
+        document.getElementById("list-container").addEventListener('click', function(e) {
+            if (e.target.tagName === 'LI') {
+                e.target.classList.toggle('checked');
+            }
+        });
+    </script>
+</body>
+</html>
